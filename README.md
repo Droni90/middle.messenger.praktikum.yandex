@@ -9,3 +9,6 @@
   - `npm run dev` - локальный запуск проекта
   - `npm run build` - сборка проекта
   - `npm run start` - запуск проекта на 3000 порту.
+
+
+[Pull Request](https://github.com/Droni90/middle.messenger.praktikum.yandex/pull/1)
