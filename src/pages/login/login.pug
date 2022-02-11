@@ -1,0 +1,18 @@
+include ./../../components/input/input.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./../../../src/layouts/head.pug
+        link(rel="stylesheet", href="../../index.scss")
+        link(rel="stylesheet", href="login.scss")
+    body.body
+        main.login-form
+            h1.login-form__title Вход
+            form.login-form__form(action="")
+                div.login-form__inputs
+                    +input('Логин', 'login')(class='login-form__input')
+                    +input('Пароль', 'password', 'password')(class='login-form__input')
+                div.login-form__buttons
+                    input(type='submit', value='Войти').login-form__signin
+                    a(href='/signup').login-form__registration Зарегистрироваться
