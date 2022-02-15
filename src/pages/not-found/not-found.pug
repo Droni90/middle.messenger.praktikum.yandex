@@ -1,0 +1,10 @@
+include ./../../components/error/error.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./../../../src/layouts/head.pug
+        link(rel="stylesheet", href="../../index.scss")
+    body.body
+        main
+            +error-block('404', 'Страница не найдена', 'Назад к чатам', '/')

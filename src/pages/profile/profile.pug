@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+    head
+        include ./../../../src/layouts/head.pug
+        link(rel="stylesheet", href="../../index.scss")
+        link(rel="stylesheet", href="profile.scss")
+    body.body
+        div.back-block
+            div.back-block__button
+        main.profile-block-container
+            div.profile-block
+                div.profile-block__avatar
+                p.profile-block__name User
+                div.profile-block__info
+                    ul.profile-block__info-list
+                        li.profile-block__info-item
+                            span.profile-block__info-label Почта
+                            span.profile-block__info-value test@mail.ru
+                        li.profile-block__info-item
+                            span.profile-block__info-label Логин
+                            span.profile-block__info-value login
+                        li.profile-block__info-item
+                            span.profile-block__info-label Имя
+                            span.profile-block__info-value name
+                        li.profile-block__info-item
+                            span.profile-block__info-label Фамилия
+                            span.profile-block__info-value family
+                        li.profile-block__info-item
+                            span.profile-block__info-label Имя в чате
+                            span.profile-block__info-value user
+                        li.profile-block__info-item
+                            span.profile-block__info-label Телефон
+                            span.profile-block__info-value +7 (888) 888 88 88
+                div.profile-block__button-block
+                    ul.profile-block__button-list
+                        li.profile-block__button-item
+                            a.profile-block__edit-button Изменить данные
+                        li.profile-block__button-item
+                            a.profile-block__edit-button Изменить пароль
+                        li.profile-block__button-item
+                            a.profile-block__close-button Выйти

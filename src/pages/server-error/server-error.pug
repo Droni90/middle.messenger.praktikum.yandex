@@ -1,0 +1,10 @@
+include ./../../components/error/error.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./../../../src/layouts/head.pug
+        link(rel="stylesheet", href="../../index.scss")
+    body.body
+        main
+            +error-block('500', 'Мы уже чиним', 'Назад к чатам', '/')

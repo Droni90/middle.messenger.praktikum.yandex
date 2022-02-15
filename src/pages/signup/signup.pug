@@ -1,0 +1,23 @@
+include ./../../components/input/input.pug
+
+doctype html
+html(lang="ru")
+    head
+        include ./../../../src/layouts/head.pug
+        link(rel="stylesheet", href="../../index.scss")
+        link(rel="stylesheet", href="signup.scss")
+    body.body
+        main.signup-form
+            h1.signup-form__title Регистрация
+            form.signup-form__form(action="")
+                div.signup-form__inputs
+                    +input('Почта', 'email')(class='signup-form__input')
+                    +input('Логин', 'login')(class='signup-form__input')
+                    +input('Имя', 'first_name')(class='signup-form__input')
+                    +input('Фамилия', 'second_name')(class='signup-form__input')
+                    +input('Телефон', 'phone')(class='signup-form__input')
+                    +input('Пароль', 'password', 'password')(class='signup-form__input')
+                    +input('Пароль (ещё раз)', 'password', 'password')(class='signup-form__input')
+                div.signup-form__buttons
+                    input(type='submit', value='Зарегистрироваться').signup-form__registration
+                    a(href='/login').signup-form__link Войти
